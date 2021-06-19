@@ -277,7 +277,26 @@ body {
   background-size: 0;
 }
 
+#lang_list-menu {
+  background-color: #fff;
+}
+
+#lang_list-menu li a {
+  color: #5965FF;
+}
+
 @media (max-width: 804px) {
+  .lang_menu {
+    display: block;
+  }
+  .basket_menu {
+    display: block;
+  }
+  #menu__icon-menu_close > img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
   .menu__icon-menu {
     background-color: #5965FF;
     color: #fff;
@@ -329,6 +348,12 @@ body {
     background-repeat: no-repeat;
     background-color: #5965FF;
     background-size: 15px;
+  }
+}
+
+@media (min-width: 804px) {
+  .menu__icon-menu {
+    display: none;
   }
 }
 
