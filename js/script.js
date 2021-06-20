@@ -9,7 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			menuClose = document.querySelector('#close_menu'),
 			phoneMenu = document.querySelector('.menu__icon-menu'),
 			phoneMenuOpen = document.querySelector('.menu__icon'),
-			phoneMenuClose = document.querySelector('#menu__icon-menu_close');
+			phoneMenuClose = document.querySelector('#menu__icon-menu_close'),
+			body = document.querySelector('body');
 
 	langTab.forEach(item => {
 		item.addEventListener('click', () => {
