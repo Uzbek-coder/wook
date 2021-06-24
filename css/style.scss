@@ -395,6 +395,18 @@ body {
 	background-color: #83A9AC;
 	border-radius: 12px;
 	text-align: center;
+	&:hover {
+		animation: big 800ms ease 0s 1 normal none;
+		background-size: 120%;
+	}
+}
+@keyframes big {
+	0% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 120%;
+	}
 }
 .high__title {
 	margin-top: 44px;
@@ -429,7 +441,10 @@ body {
 	background: url(../images/phone.png) no-repeat right center;
 	background-size: 100%;
 	border-radius: 12px;
-
+	&:hover {
+		animation: big 800ms ease 0s 1 normal none;
+		background-size: 120%;
+	}
 }
 .double_1-content {
 	border-radius: 12px;
@@ -464,6 +479,10 @@ body {
 	background-size: 100%;
 	margin-top: 30px;
 	border-radius: 12px;
+	&:hover {
+		animation: big 800ms ease 0s 1 normal none;
+		background-size: 120%;
+	}
 }
 
 .double_2-content {
@@ -550,4 +569,96 @@ body {
 		font-size: 16px;
 		margin: 0 0 30px 30px;
 	}
+}
+
+.card {
+	margin: 80px 0 100px 0;
+}
+.card__container {
+	max-width: 1480px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.card_discount {}
+.c__title {
+	margin-bottom: 40px;
+	font-size: 48px;
+	line-height: 58px;
+	color: #000000;
+	font-family: 'Gilroy_Bold';
+}
+.card__content {}
+.card_block {
+	border: 2px solid #DFE1FF;
+	padding: 20px;
+	border-radius: 12px;
+	margin-right: 20px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.card_img {
+	border: 2px solid #DFE1FF;
+	text-align: center;
+	padding: 40px 0;
+	border-radius: 8px;
+}
+.card_text {}
+.card_title {
+	margin: 20px 0 5px 0;
+	font-size: 20px;
+	line-height: 29px;
+	color: #11183F;
+}
+.delete {
+	font-size: 14px;
+	line-height: 19px;
+	text-decoration-line: line-through;
+	color: #FF6262;
+}
+.card__content {
+	font-size: 18px;
+	line-height: 24px;
+	color: #8B879A;
+	margin: 20px 0;
+	display: flex;
+}
+.card__star img {
+	cursor: pointer;
+}
+.card_buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.basket__btn > a {
+	font-family: 'Gilroy_Bold';
+	font-size: 15px;
+	line-height: 24px;
+	color: #11183F;
+	padding: 12px 20px 12px 40px;
+	border-radius: 6px;
+	display: inline-block;
+	background: url(../images/korzina.png) no-repeat 10px center;
+	background-color: #EBECFF;
+	margin-right: 20px;
+}
+.buy__btn > a{
+	font-family: 'Gilroy_Bold';
+	font-size: 15px;
+	line-height: 24px;
+	color: #11183F;
+	padding: 12px 15px 12px 30px;
+	border-radius: 6px;
+	display: inline-block;
+	background: url(../images/buy.png) no-repeat 6px center;
+	background-color: #EBECFF;
+	&:hover {
+		box-shadow: 0 0 10px #11183f98;
+		transition: all .3s ease 0s;
+		transform: translateY(-3px);
+	}
+}
+.card_new {
+	margin-top: 50px;
 }

@@ -40,5 +40,39 @@ window.addEventListener('DOMContentLoaded', () => {
 	phoneMenuClose.addEventListener('click', () => {
 		phoneMenu.style.left = '-100%';
 		phoneMenu.style.transition = 'all .3s ease 0s';
-	})
+	});
+
+	//Slider
+
+	new Swiper('.swiper-container', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		slidesPerView: 4,
+
+		keyboard: {
+			enabled: true,
+			onlyInViewport: true,
+			pageUpDown: true,
+		},
+
+		loop: true,
+
+		breakpoints: {
+			300: {
+				slidesPerView: 1,
+			},
+			689: {
+				slidesPerView: 2,
+			},
+			1020: {
+				slidesPerView: 3,
+			},
+			1342: {
+				slidesPerView: 4,
+			},
+		},
+	});
 });
